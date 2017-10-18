@@ -1,0 +1,108 @@
+@font-face {
+    font-family: "Sertig";
+    src: url(../fonts/Sertig.otf) format("truetype");
+}
+
+body {
+  background-color:  #f5f5f5;
+  font-family: "Sertig", Verdana, Tahoma;
+  font-size:20px;
+}
+
+@media (min-width: 1200px) {
+    .container{
+        max-width: 1000px;
+    }
+}
+
+img {
+    vertical-align:  baseline ; 
+}
+
+
+a:hover
+{
+  text-decoration:none;
+}
+
+.links li {
+    display: inline;
+    padding: 0 15px;
+}
+
+
+
+.footer {
+    padding-top:20px;
+    padding-bottom:20px;
+}
+
+
+.nav>li>a {
+    position: relative;
+    display: block;
+    padding: 10px 15px;
+}
+
+
+#cv, #home{
+    background-color: white;
+    padding-bottom:30px;
+}
+
+.cvName{
+	font-size:300%;
+}
+
+.cvTitle{
+	font-size:125%;
+}
+
+
+.panel > .skills {
+    color:white;
+	background-color:#2ecc71;
+	
+}
+
+.panel > .work{
+	color:white;
+	background-color:#9b59b6;
+}
+
+.panel > .education{
+	color:white;
+	background-color:#e67e22;
+}
+
+.panel > .language{
+	color:white;
+	background-color:#e74c3c;
+}
+
+.panel > .interest{
+	color:white;
+	background-color:#3498db;
+}
+
+
+.skillsSubCategs{
+   font-weight: bold;
+   
+}
+
+.expsCategName{
+    font-weight: bold;
+}
+
+.expsCategCompany{
+    font-weight: normal;
+    font-style: italic;
+}
+
+.expsCategInfoDate{
+    font-weight: bold;
+}
+
+
+

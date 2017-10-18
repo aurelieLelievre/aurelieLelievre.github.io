@@ -1,0 +1,19 @@
+ <nav class="navbar navbar-default" id="colorful-nav">
+    <div class="container">
+       <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" >
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          </button>
+       </div>
+       <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav">
+             <li class="home"> <a ng-click="changePage(portal.CV.url)">    <i class="fa fa-home fa-2x" ></i></a></li>
+             <li class="applications"><a ng-click="changePage(portal.Applications.url)"><i class="fa fa-envelope fa-2x"></i></a></li>
+             <li class="about"><a ng-click="changePage(portal.About.url)"> <i class="fa fa-info fa-2x"></i></a></li>
+             <li class="contact"><a ng-click="changePage(portal.Contact.url)"><i class="fa fa-envelope fa-2x"></i></a></li>
+          </ul>
+       </div>
+    </div>
+ </nav>

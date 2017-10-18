@@ -1,0 +1,14 @@
+{
+  "About": {
+    "url": "About",
+    "name": "A propos"
+  },
+  "CV": {
+    "url": "CV",
+    "name": "CV"
+  },
+  "Contact": {
+    "url": "Contact",
+    "name": "Contact"
+  },
+}

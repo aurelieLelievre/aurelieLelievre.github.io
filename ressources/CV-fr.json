@@ -1,0 +1,156 @@
+{
+  "CV": {
+    "firstname": "Aurélie",
+    "familyname": "Le Lièvre",
+    "title": "Développeuse d'applications",
+    "email": "aurelie.lelievre1@gmail.com",
+    "homepage": "",
+    "github": "github.com/aurelieLelievre",
+    "phone_number": "06 70 09 14 50",
+    "linkedin": "fr.linkedin.com/in/",
+    "Skills": {
+      "name": "Compétences",
+      "values": [
+        {
+          "subCateg": [
+            {
+              "name": "Langages",
+              "values": [
+                "Java",
+                "Javascript",
+                "Python",
+                "HTML/CSS",
+                "Bash",
+                "R"
+              ]
+            },
+            {
+              "name": "Bases de données",
+              "values": [
+                "PostgreSQL",
+                "MySQL",
+                "Oracle"
+              ]
+            },
+            {
+              "name": "Systèmes",
+              "values": [
+                "Unix/Linux, Windows",
+                "Windows"
+              ]
+            },
+            {
+              "name": "Frameworks",
+              "values": [
+                "Django",  
+                "jQuery",
+                "AngularJS",
+                "Bootstrap"
+              ]
+            },
+            {
+              "name": "Logiciels",
+              "values": [
+                "Git",  
+                "SVN",
+                "Talend",
+                "Netbeans",
+                "Eclipse",
+                "JIRA",
+                "Redmine"
+              ]
+            },
+            {
+              "name": "Autres",
+              "values": [
+                "UML",
+                "XML",
+                "JSON",
+                "LateX"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "Experiences": {
+      "name": "Expériences",
+      "values": [
+        {
+          "name": "Ingénieur d'études et développement",
+          "location": "Rennes",
+          "company": "Sopra HR Software",
+          "date": "Depuis Novembre 2015",
+          "description": "Développement HR Access et interfaces Java."
+        },
+        {
+          "name": "Assistant-ingénieur développement d'applications web",
+          "location": "Angers",
+          "company": "Institut National de la Recherche Agronomique (INRA)",
+          "date": "Juin 2014 - Juin 2015",
+          "description": "Conception et développement de bases de données et d'interfaces web afin d'améliorer la gestion du matériel biologique du laboratoire."
+        },
+        {
+          "name": "Stage développement d'applications",
+          "location": "Mondonville",
+          "company": "BIOGEMMA",
+          "date": "Mars 2013 - Septembre 2013",
+          "description": "Conception et développement d'une application permettant d'analyser des séquences ADN."
+        }
+      ]
+    },
+    "Education": {
+      "name": "Études",
+      "values": [
+        {
+          "name": "Master en Bio-informatique",
+          "location": "Bordeaux, France",
+          "university": "Université de Bordeaux",
+          "date": "2013",
+          "description": ""
+        },
+        {
+          "name": "Licence de biologie",
+          "location": "Rennes, France",
+          "university": "Université de Rennes",
+          "date": "2011",
+          "description": ""
+        }
+      ]
+    },
+    "Languages": {
+      "name": "Langues",
+      "values": [
+        {
+          "name": "Français",
+          "level": "Langue maternelle"
+        },
+        {
+          "name": "Anglais",
+          "level": "Courant"
+        },
+        {
+          "name": "Espagnol",
+          "level": "Notions"
+        }
+      ]
+    },
+     "Interests": {
+      "name": "Centres d'intérêt",
+      "values": [
+        {
+          "name": "Pêche en mer",
+          "description": ""
+        },
+        {
+          "name": "Course à pied",
+          "description": ""
+        },
+        {
+          "name": "Musique (saxophone et guitare)",
+          "description": ""
+        }
+      ]
+    }
+  }
+}

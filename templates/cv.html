@@ -1,0 +1,89 @@
+<div id="cv" class="container" ng-show="page==portal.CV.url" ng-cloak>
+            <div class="row jumbotron">
+               <div class="col-md-8">
+                  <div class="cvName text-center">{{cv.firstname}} {{cv.familyname}}</div>
+                  <div class="cvMail text-center">
+                     <ul class="links">
+                        <li><a ng-href="https://{{cv.github}}"><i class="fa fa-github"></i> GitHub</a></li>
+                        <li><a ng-href="https://{{cv.linkedin}}"><i class="fa fa-linkedin"></i> LinkedIn</a></li>
+                     </ul>
+                  </div>
+                  <div class="cvTitle text-center">{{cv.title}}</div>
+               </div>
+               <div class="photo col-md-4 text-center">
+                  <img src="images/avatar.png" alt="photo" style="width:75px;">
+               </div>
+            </div>
+			
+			<!-- /Skills-->
+			<div class="panel panel-default">
+				<div class="panel-heading skills"><i class="fa fa-wrench"></i> {{cv.Skills.name}}</div>
+				<div class="panel-body" ng-repeat="skill in cv.Skills.values">
+				   <div class="skillsCategs col-md-12">{{skill.name}}</div>
+				   <div class="col-md-6 col-xs-12" ng-repeat="subCateg in skill.subCateg">
+					  <div class="skillsSubCategs col-md-4 col-xs-6 text-right">{{subCateg.name}}</div>
+					  <div class="skillsValue col-md-8 col-xs-6">
+						 <span ng-repeat="val in subCateg.values">
+						 {{val}}{{$last ? '' : ', '}}
+						 </span>
+					  </div>
+				   </div>
+				</div>
+			</div>
+			
+			<!-- /Work-->
+			<div class="panel panel-default">
+				<div class=" panel-heading work"><i class="fa fa-suitcase"></i> {{cv.Experiences.name}}</div>
+				<div class="panel-body" ng-repeat="exps in cv.Experiences.values">
+				   <div class="row">
+					  <div class="expsCategName col-md-6 col-xs-6">
+						 {{exps.name}}
+						 <div class="expsCategCompany">{{exps.company}}</div>
+					  </div>
+					  <div class="expsCategInfo col-md-6 col-xs-6 text-right">
+						 <div class="expsCategInfoDate">{{exps.date}}</div>
+						 <div class="expsCategInfoLoc">{{exps.location}}</div>
+					  </div>
+				   </div>
+				   <p class="expsDescr text-justify" ng-bind-html="trustHTML(exps.description)"></p>
+				</div>
+			</div>
+			
+			<!-- /Education-->
+			<div class="panel panel-default">
+				<div class="panel-heading education"><i class="fa fa-graduation-cap"></i> {{cv.Education.name}}</div>
+				<div class="panel-body" ng-repeat="edu in cv.Education.values">
+				   <div class="row">
+					  <div class="expsCategName col-md-6 col-xs-6">
+						 {{edu.name}}
+						 <div class="expsCategCompany">{{edu.university}}</div>
+					  </div>
+					  <div class="expsCategInfo col-md-6 col-xs-6 text-right">
+						 <div class="expsCategInfoDate">{{edu.date}}</div>
+						 <div class="expsCategInfoLoc">{{edu.location}}</div>
+					  </div>
+				   </div>
+				   <p class="expsDescr">{{edu.description}}</p>
+				</div>
+			</div>
+			
+			<!-- /Language-->
+			<div class="panel panel-default">
+				<div class=" panel-heading language"><i class="fa fa-flag"></i> {{cv.Languages.name}}</div>
+					<div class="panel-body"ng-repeat="lang in cv.Languages.values">
+					   <div class="skillsSubCategs col-md-4 col-xs-6 text-right">{{lang.name}}</div>
+					   <div class="skillsValue col-md-8 col-xs-6">{{lang.level}}</div>
+					</div>
+			</div>
+					
+			<!-- /Interests-->
+			<div class="panel panel-default">
+				<div class="panel-heading interest"><i class="fa fa-heart"></i> {{cv.Interests.name}}</div>
+				<div class="panel-body" ng-repeat="inter in cv.Interests.values">
+				   <div class="publiName">{{inter.name}}</div>
+				   <div class="publiAuthors">
+					  {{inter.description}}
+				   </div>
+				</div>
+			</div>
+         </div>
